@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.item{
+    border: solid 1px black;
+    margin: 20px;
+    padding: 30px;
+}
+
+.transition-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition-property: background-color, color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.transition-button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.transition-text{
+    font-size: 20px;
+    color:blueviolet;
+    font-family: fantasy;
+    transition-property: color, font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer
+
+}
+
+.transition-text:hover{
+    color: wheat;
+    font-size: 30px;
+}
+
+/* DIV can just be used to make simple shapes like this ding dang box*/
+.transition-box{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition-property: transform, background-color, width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer
+
+}
+
+.transition-box:hover{
+    transform: scale(1.5) rotate(45deg);
+    background-color: rebeccapurple;
+    width: 200px;
+
+}
+
+.fancy-button{
+    padding: 10px;
+    font-size: 18px;
+    background-color:seagreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.fancy-button:hover{
+    transform: translateY(-10px) scale(1.1);
+    background-color: peru;
+    box-shadow: 0 8px 20px rgb(22, 3, 20);
+}
+
+.expandtext{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:slateblue;
+    background-color: burlywood;
+    transition-property: letter-spacing, color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer
+
+}
+
+.expandtext:hover{
+    letter-spacing: 20px;
+    color:rgb(241, 241, 114);
+    background-color: slateblue;
+    
+}
+
+.interactive-button{
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: brown;
+    color:rgb(233, 255, 64);
+    transition-property: background-color, color, transform, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.interactive-button:hover{
+    background-color: rgb(126, 185, 244);
+    color:black;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px black;
+
+}
+
+.interactive-button:active{
+    background-color: deeppink;
+    color: white;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px black;
+}
+
+
